@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(black, white);
+  }
+
+ .row {
+     
+    margin: 2px;
+    display: flex;
+     
+ } 
+
+ h1 {
+    margin: 0 auto;
+    background-color: orange;
+    border: 2px solid black;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: -15px;
+ }
+
+ #rules {
+    background-color: red;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+ }
+
+ #randomNumber {
+    background-color: beige;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 800;
+   
+ }
+
+ #w-lBox {
+    background-color: aquamarine;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: 15px;
+    text-align: left;
+ }
+
+ #constant-display {
+    background-color: teal;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: 35%;
+ }
+
+ #currentTotal {
+    background-color: teal;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    width: 35%;
+ }
+
+ img {
+    padding: 5px;
+ }
+
+
