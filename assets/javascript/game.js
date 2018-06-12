@@ -27,13 +27,12 @@ $('#randomNumber').text(randomNum);
     if (crystalPoints.indexOf(arNum) < 0) {
     crystalPoints.push(arNum);
     } 
-    console.log(crystalPoints);
-}
-
        console.log(crystalPoints);
        console.log(runningTotal);
        console.log(randomNum);
+}
 
+       
 
 function reset() {
 
@@ -95,13 +94,13 @@ function loser() {
         reset();
 }
 
-if (randomNum == runningTotal) {
+/*if (randomNum == runningTotal) {
     //winner();
     winner();
 } else if (runningTotal > randomNum) {
     //loser()
     loser();
-}
+}*/
 
 
 
@@ -115,8 +114,8 @@ $('#crystal1').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[0]);
     $('#currentTotal').text(runningTotal);
 
-    /*console.log(runningTotal);
-    console.log(randomNum);*/
+    console.log(runningTotal);
+    console.log(randomNum);
    
 
     if (randomNum == runningTotal) {
@@ -127,11 +126,6 @@ $('#crystal1').on('click', function(){
         //loser()
         loser();
     }
-
-    console.log(crystalPoints);
-       console.log(runningTotal);
-       console.log(randomNum);
-
   
 })
 
@@ -141,8 +135,8 @@ $('#crystal2').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[1]);
     $('#currentTotal').text(runningTotal);
 
-    /*console.log(runningTotal);
-    console.log(randomNum);*/
+    console.log(runningTotal);
+    console.log(randomNum);
 
     if (randomNum == runningTotal) {
         //winner();
@@ -160,8 +154,8 @@ $('#crystal3').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[2]);
     $('#currentTotal').text(runningTotal);
 
-    /*console.log(runningTotal);
-    console.log(randomNum);*/
+    console.log(runningTotal);
+    console.log(randomNum);
 
     if (randomNum == runningTotal) {
        //winner();
@@ -180,8 +174,8 @@ $('#crystal4').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[3]);
     $('#currentTotal').text(runningTotal);
 
-    /*console.log(runningTotal);
-    console.log(randomNum);*/
+    console.log(runningTotal);
+    console.log(randomNum);
 
     if (randomNum == runningTotal) {
         //winner();
