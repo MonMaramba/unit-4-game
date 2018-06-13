@@ -3,7 +3,7 @@
 var wins = 0;
 var loss = 0;
 var runningTotal = 0;
-randomNum = 0;
+var randomNum = 0;
 
 //create array that contains the crystals
 
@@ -36,10 +36,10 @@ $('#randomNumber').text(randomNum);
 
 function reset() {
 
-   var wins = wins;
-   var loss = loss;
+   
    crystalPoints.length = 0;
    runningTotal = 0;
+   randomNum = 0;
 
    $('#currentTotal').text(runningTotal);
     
@@ -49,7 +49,7 @@ function reset() {
     
     $('#currentTotal').text(runningTotal);
 
-    var randomNum = Math.floor(Math.random() * 101 + 19);
+    randomNum = Math.floor(Math.random() * 101 + 19);
     $('#randomNumber').text(randomNum);
 
     for (i=0; crystalPoints.length < 4; i++) {
