@@ -9,30 +9,43 @@ body {
      
  } 
 
+ .div {
+   margin: 3px;
+   padding: 2px;
+ }
+
  h1 {
     margin: 0 auto;
+    padding: 5px;
     background-color: orange;
     border: 2px solid black;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     left: -15px;
- }
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+    text-shadow: -1px 0 rgb(1, 42, 56), 0 1px rgb(1, 32, 43), 1px 0 rgb(2, 32, 43), 0 -1px rgb(2, 43, 56);
+    border-radius: 3%;
+   }
 
  #rules {
     background-color: red;
     border: 2px solid black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    border-radius: 3%;
  }
 
  #randomNumber {
     background-color: beige;
     border: 2px solid black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
-    font-weight: 800;
+    font-weight: 700;
+    border-radius: 3%;
    
  }
 
@@ -43,7 +56,9 @@ body {
     font-size: 25px;
     padding-top: 15px;
     text-align: left;
+    border-radius: 3%;
  }
+ 
 
  #constant-display {
     background-color: teal;
@@ -51,6 +66,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     width: 35%;
+    border-radius: 3%;
+ }
+
+ .custom {
+   width: 149px;
  }
 
  #currentTotal {
@@ -59,10 +79,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     width: 35%;
+    font-weight: 600;
+    border-radius: 3%;
  }
 
  img {
-    padding: 5px;
+    padding: 2px;
+    border-radius: 5%;
+
  }
 
 

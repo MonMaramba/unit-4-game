@@ -1,26 +1,24 @@
-//declare variable for wins, losses, runningTotal
+//declare variable for wins, losses, runningTotal and sounds
 
 var wins = 0;
 var loss = 0;
 var runningTotal = 0;
 var randomNum = 0;
 
+var sound2 = document.getElementById("lossAudio");
+        
+var sound1 = document.getElementById("winAudio");
+
 //create array that contains the crystals
 
 var crystalPoints = [];
 
-//create function for game reset
-
 //generate random number between 19 - 120 and display on randomNumber div
-
-/*function rand() {var randomNum = [Math.floor(Math.random() * 101 + 19)];
-$('#randomNumber').text(randomNum);
-}*/
-//generate 1 random number between 1-12 and add to array. No duplicates
 
     var randomNum = [Math.floor(Math.random() * 101 + 19)];
     $('#randomNumber').text(randomNum);
 
+//generate 4 random numbers between 1-12 and add to array. No duplicates. Array needs to have length of 4.
 
     for (i=0; crystalPoints.length < 4; i++) {
     var arNum = Math.floor(Math.random() * 12) + 1;
@@ -32,7 +30,7 @@ $('#randomNumber').text(randomNum);
        console.log(randomNum);
 }
 
-       
+//create function for game reset
 
 function reset() {
 
@@ -65,23 +63,13 @@ function reset() {
     }
  } 
 
- 
-    
- /*if (randomNum == runningTotal) {
-    //winner();
-    winner();
-} else if (runningTotal > randomNum) {
-    //loser()
-    loser();
-}*/
-
 //win and lose functions
 
 function winner() {
-    wins++;
-        console.log(wins);
+        wins++;
+        
         $('#wins').text('Wins:   ' + wins);
-        alert("You win!");
+         
         reset();
 }
 
@@ -89,23 +77,15 @@ function winner() {
 
 function loser() {
         loss++;
+       
         $('#losses').text('Losses: ' + loss);
-        alert("Sorry you lose!")
+
         reset();
 }
 
-/*if (randomNum == runningTotal) {
-    //winner();
-    winner();
-} else if (runningTotal > randomNum) {
-    //loser()
-    loser();
-}*/
-
-
 
 /*listen for click event and assign value to crystal
-clicked and add to total*/
+clicked and add to total. Then check for win or loss and call appropriate funciton*/
 
 
 $('#crystal1').on('click', function(){
@@ -114,16 +94,15 @@ $('#crystal1').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[0]);
     $('#currentTotal').text(runningTotal);
 
-    console.log(runningTotal);
-    console.log(randomNum);
-   
-
     if (randomNum == runningTotal) {
         //winner();
+        
+        sound1.play();
         winner();
 
     } else if (runningTotal > randomNum) {
         //loser()
+        sound2.play();
         loser();
     }
   
@@ -135,14 +114,13 @@ $('#crystal2').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[1]);
     $('#currentTotal').text(runningTotal);
 
-    console.log(runningTotal);
-    console.log(randomNum);
-
     if (randomNum == runningTotal) {
         //winner();
+        sound1.play();
         winner();
     } else if (runningTotal > randomNum) {
         //loser()
+        sound2.play();
        loser();
     }
    
@@ -154,15 +132,14 @@ $('#crystal3').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[2]);
     $('#currentTotal').text(runningTotal);
 
-    console.log(runningTotal);
-    console.log(randomNum);
-
     if (randomNum == runningTotal) {
        //winner();
+      sound1.play();
       winner();
 
     } else if (runningTotal > randomNum) {
         //loser()
+        sound2.play();
         loser();
     }
  
@@ -174,14 +151,14 @@ $('#crystal4').on('click', function(){
     runningTotal = runningTotal + (crystalPoints[3]);
     $('#currentTotal').text(runningTotal);
 
-    console.log(runningTotal);
-    console.log(randomNum);
 
     if (randomNum == runningTotal) {
         //winner();
+        sound1.play();
         winner();
     } else if (runningTotal > randomNum) {
         //loser()
+        sound2.play();
         loser();
     }
        
